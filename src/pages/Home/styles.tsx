@@ -11,10 +11,18 @@ export const Container = styled.div`
 `;
 
 export const Presentation = styled.div`
-  border: 1px solid #fff;
+  border: 1px solid;
+  border-image: linear-gradient(
+    to left top,
+    rgb(0, 0, 0, 0) 40%,
+    rgb(255, 255, 255) 40%,
+    rgb(255, 255, 255) 60%,
+    rgb(0, 0, 0, 0) 60%,
+    rgb(0, 0, 0, 0) 60%
+  );
+  border-image-slice: 1;
   margin: 100px 150px;
   width: 40%;
-  padding: 30px;
 `;
 
 export const PresentationText = styled.h1`
@@ -23,4 +31,5 @@ export const PresentationText = styled.h1`
   font-size: 28px;
   line-height: 30px;
   color: #fff;
+  margin: 30px;
 `;
