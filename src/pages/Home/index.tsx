@@ -1,11 +1,20 @@
 import * as React from 'react';
-import { Container } from './styles';
+import { Container, Presentation, PresentationText } from './styles';
+import Navbar from 'src/components/Navbar';
 
 interface Props {}
 
-const Home: React.SFC<Props> = props => {
+const Home: React.SFC<Props> = (props) => {
   return (
-    <div>Hello Arriegua dev</div>
+    <Container>
+      <Navbar />
+      <Presentation>
+        <PresentationText>
+          Conheça a comunidade arrieguadev diretamente do sertões de Crateús
+          para o mundo
+        </PresentationText>
+      </Presentation>
+    </Container>
   );
 };
 
