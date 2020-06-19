@@ -6,6 +6,7 @@ import Navbar from "src/components/Navbar";
 
 import About from "./About";
 import Goals from "./Goals";
+import Footer from "./Footer";
 
 interface Props {}
 
@@ -21,6 +22,7 @@ const Home: React.SFC<Props> = (props) => {
       </Presentation>
       <About />
       <Goals />
+      <Footer />
     </Container>
   );
 };
