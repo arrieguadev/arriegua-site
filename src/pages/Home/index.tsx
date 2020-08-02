@@ -1,7 +1,12 @@
-import * as React from 'react';
-import { Container, Presentation, PresentationText } from './styles';
-import Navbar from 'src/components/Navbar';
-import About from 'src/components/About';
+import * as React from "react";
+
+import { Container, Presentation, PresentationText } from "./styles";
+
+import Navbar from "src/components/Navbar";
+
+import About from "./About";
+import Goals from "./Goals";
+import Footer from "./Footer";
 
 interface Props {}
 
@@ -15,7 +20,9 @@ const Home: React.SFC<Props> = (props) => {
           para o mundo
         </PresentationText>
       </Presentation>
-      <About/>
+      <About />
+      <Goals />
+      <Footer />
     </Container>
   );
 };
